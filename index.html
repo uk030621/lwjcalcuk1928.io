@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include Math.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/9.5.0/math.min.js"></script>
+    <link rel = "stylesheet" href = "calc.css">
+</head>
+<body>
+   <div id="calculator">
+    <div id="datetime"></div> <!-- New div for displaying date -->
+    <button type="button" class="developBtn" data-bs-toggle="collapse" data-bs-target="#demo">Developer</button>
+        <div id="demo" class="collapse">
+            <img class = "me" src="lwj.jpg">
+            <p class ="thursday">LWJ</p>
+        </div>
+    <div>
+        <!--<img class = "boys" src = "DylanJake.jpg">-->
+        
+        <div class = "pic-Container">
+            <p class="name">Basic & </p>
+            <a class = "link1" href="https://uk030621.github.io/lwjukbasictax2425.io/" target="_blank">
+                <p class = "nicepic">UK Income Tax & NI Calculators</p>
+            </a>
+            <img class = "pic1" src = "UKTAX.ico">
+        </div>
+
+    </div>
+    <input id="display" readonly>
+        <div id = "keys">
+            <button onclick="appendToDisplay('+')" class = "operator-Btn">+</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('-')" class = "operator-Btn">-</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('*')" class = "operator-Btn">*</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('/')" class = "operator-Btn">/</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick = "calculate()">=</button>
+            <button onclick = "clearDisplay()" class = "operator-Btn">C</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+            <button id="closeButton" class = "exit-Btn">Exit</button>
+            <!--<a class = "web1" href="https://uk030621.github.io/lwjukbasictax2425.io/" target="_blank">
+                <button class="taxCalc">Basic Tax Calculator</button>
+            </a>-->
+        </div>    
+   </div>
+   
+   <script src="calc.js"></script>
+   <script>
+    const closeButton = document.getElementById('closeButton');
+
+    closeButton.addEventListener('click', function() {
+        // Close the current window
+        window.close();
+    });
+</script>
+   
+</body>
+</html>

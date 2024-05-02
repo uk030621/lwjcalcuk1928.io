@@ -1,0 +1,227 @@
+body{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+
+#calculator{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    width: auto; /* Adjusted width for mobile screens */
+    max-width: 100%; /* Updated to 100% to fit mobile screens */
+    overflow: hidden;
+}
+
+a.link1{
+    text-decoration: none;
+    padding: 0px;
+    
+}
+
+a.link1:hover{
+    color: yellow;
+    padding: 0px;
+}
+
+.thursday{
+    font-size: smaller;
+    opacity: 0.6;
+    color: white;
+    margin-left: 15px;
+    
+}
+
+.me{
+    width: 120px;
+    height: auto;
+    border-radius: 25px;
+    padding: 15px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.developBtn{
+    background-color:hsl(0, 0%, 30%);
+    font-size: small;
+    padding: 5px;
+    height: auto;
+    width: auto;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 20px;
+    opacity: 0.6;
+}
+
+.pic-Container{
+    display: flex;
+    align-items: center; /* Vertically center align items */
+    justify-content: left; /* Horizontally center align items */
+    max-width: 600px; /* Optional: Set a max-width to limit the width of the container */
+    margin: 0 auto; /* Optional: Center the container horizontally */
+    gap: 0px;
+}
+
+img.pic1{
+    margin-top: 0px;
+    width: 50px;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+p.nicepic{
+    color: white;
+    margin: 0;
+    padding: 10px;
+    padding-left: 5px;
+    text-align: center;
+    font-size: large;
+}
+
+p.nicepic:hover{
+    color: yellow;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 3rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+    margin-top: 20px;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+.taxCalc{
+    display: block;
+    padding-left: 10px;
+    background-color: hsl(35, 100%, 55%);
+    color: black; 
+    margin-top: 25px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 12px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.taxCalc:hover{
+    background-color: hsl(35, 100%, 65%);
+    color: black; 
+}
+
+.taxCalc:active{
+    background-color: hsl(35, 100%, 75%);
+    color: black; 
+}
+
+.web1{
+    text-decoration-line: none;
+}
+
+button{
+    width: 80px; /* Adjusted width for mobile screens */
+    height: 80px; /* Adjusted height for mobile screens */
+    border-radius: 40px; /* Adjusted border-radius for mobile screens */
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem; /* Adjusted font size for mobile screens */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.exit-Btn{
+    font-size: 12px;
+    background-color: hsl(35, 100%, 55%);
+    color: black;
+}
+
+.exit-Btn:hover{
+    background-color: hsl(35, 100%, 65%);
+    color: black;  
+}
+
+.exit-Btn:active{
+    background-color: hsl(35, 100%, 75%); 
+    color: black; 
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-Btn{
+    background-color: hsl(35, 100%, 55%);
+    color: black;
+}
+
+.operator-Btn:hover{
+    background-color: hsl(35, 100%, 65%);
+    color: black;
+}
+
+.operator-Btn:active{
+    background-color: hsl(35, 100%, 75%);
+    color: black;
+}
+
+#datetime{
+    color: white;
+    padding: 10px;
+}
+
+p.name{
+    padding: 0px;
+}
+
+.name{
+    display: inline;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    font-size: large;
+    margin: 0;
+    margin-right: 0px;
+}
+
+.boys{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    #calculator {
+        width: 90%; /* Adjust as needed for smaller screens */
+    }
+
+    button {
+        width: 60px; /* Adjusted width for smaller screens */
+        height: 60px; /* Adjusted height for smaller screens */
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+}

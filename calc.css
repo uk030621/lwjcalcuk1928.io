@@ -3,13 +3,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     background-color: hsl(0, 0%, 95%);
     background-image: url('vista.jpg');
     background-size: cover; /* This ensures the background image covers the entire viewport */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
-    
 }
 
 #calculator{
@@ -19,6 +18,7 @@ body{
     width: auto; /* Adjusted width for mobile screens */
     max-width: 100%; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
+    height: auto;
     
 }
 
@@ -49,8 +49,6 @@ a.link1:hover{
     padding-bottom: 5px;
     margin-bottom: 0px;
 }
-
-
 
 
 .developBtn{
@@ -108,8 +106,9 @@ p.nicepic:hover{
 #display{
     width: 100%;
     padding: 20px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
+    border-radius: 10px;
     border: none;
     background-color: hsl(0, 0%, 20%);
     color: white;

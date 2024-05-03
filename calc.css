@@ -8,8 +8,7 @@ body{
     background-image: url('vista.jpg');
     background-size: cover; /* This ensures the background image covers the entire viewport */
     background-position: center; /* Center the background image */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-    
+    background-repeat: no-repeat; /* Prevent the background image from repeating */    
 }
 
 #calculator{
@@ -19,6 +18,14 @@ body{
     width: 90%; /* Adjusted width for mobile screens */
     max-width: 600px; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
+    min-height: 300px; /* Adjust as needed to ensure full visibility */
+}
+
+/* Media query for landscape view */
+@media screen and (orientation: landscape) {
+    body {
+        background-size: contain; /* Ensure the background image is fully visible in landscape */
+    }
 }
 
 a.link1{

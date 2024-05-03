@@ -1,40 +1,26 @@
-body {
-    margin: 0;
+body{
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: hsl(0, 0%, 95%);
     background-image: url('vista.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; /* This ensures the background image covers the entire viewport */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    
 }
 
-#calculator {
+#calculator{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: hsla(0, 0%, 15%, 0.7);
+    background-color: hsl(0, 0%, 15%, 0.7);
     border-radius: 15px;
-    width: 90%;
-    max-width: 600px;
+    width: auto; /* Adjusted width for mobile screens */
+    max-width: 100%; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
+    
 }
-
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-    #calculator {
-        width: 90%; /* Adjust as needed for smaller screens */
-    }
-
-    button {
-        width: 60px; /* Adjusted width for smaller screens */
-        height: 60px; /* Adjusted height for smaller screens */
-        font-size: 1.5rem; /* Adjusted font size for smaller screens */
-    }
-}
-
-
-
 
 a.link1{
     text-decoration: none;
@@ -242,5 +228,15 @@ p.name{
     vertical-align: middle;
 }
 
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    #calculator {
+        width: 90%; /* Adjust as needed for smaller screens */
+    }
 
-
+    button {
+        width: 60px; /* Adjusted width for smaller screens */
+        height: 60px; /* Adjusted height for smaller screens */
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+}

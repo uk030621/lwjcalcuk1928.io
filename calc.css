@@ -24,9 +24,10 @@ body{
 /* Media query for landscape view */
 @media screen and (orientation: landscape) {
     body {
-        background-size: contain; /* Ensure the background image is fully visible in landscape */
+        background-size: auto 100%; /* Ensure the background image is fully visible in landscape */
     }
 }
+
 
 a.link1{
     text-decoration: none;

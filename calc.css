@@ -18,15 +18,21 @@ body {
     width: 90%;
     max-width: 600px;
     overflow: hidden;
-    height: auto; /* Reset height for fluidity */
 }
 
-/* Media query for landscape view */
-@media screen and (orientation: landscape) {
-    body {
-        background-size: contain; /* Ensure the background image is fully visible in landscape */
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    #calculator {
+        width: 90%; /* Adjust as needed for smaller screens */
+    }
+
+    button {
+        width: 60px; /* Adjusted width for smaller screens */
+        height: 60px; /* Adjusted height for smaller screens */
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
     }
 }
+
 
 
 

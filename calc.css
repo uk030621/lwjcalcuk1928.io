@@ -77,6 +77,13 @@ img.pic1{
     
 }
 
+.barcode{
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
 p.nicepic{
     color: white;
     margin: 0;

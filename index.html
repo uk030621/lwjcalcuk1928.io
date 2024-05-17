@@ -15,20 +15,22 @@
     <div id="datetime"></div> <!-- New div for displaying date -->
     <button type="button" class="developBtn" data-bs-toggle="collapse" data-bs-target="#demo">Developer</button>
         <div id="demo" class="collapse">
-            <img class = "me" src="lwj.jpg">
+            <img class = "me" src="lwj.jpg" alt="Picture of Developer">
             <p class ="thursday">LWJ</p>
         </div>
     <div>
        
         
         <div class = "pic-Container">
-            <a class = "link1" href="https://uk030621.github.io/uk0306taxcalc.io/" target="_blank">
+            <a class = "link1" href="https://uk030621.github.io/uk0306taxcalc.io/" target="_blank" rel="noopener">
                 <img class = "barcode" src="PAYE_Tax_Calc2.png" alt="UKTAX.ico"> 
             </a>
             <p class="name">UK PAYE Tax & NI Calculator</p>
         </div>
 
     </div>
+    <!-- Label for the display input -->
+    <label for="display">Display:</label>
     <input id="display" readonly>
         <div id = "keys">
             <button onclick="appendToDisplay('+')" class = "operator-Btn">+</button>
@@ -50,6 +52,7 @@
             <button onclick = "clearDisplay()" class = "operator-Btn">C</button>
             <button onclick="appendToDisplay('(')">(</button>
             <button onclick="appendToDisplay(')')">)</button>
+            <button type="button" onclick="backspace()">⌫</button>
             <button id="closeButton" class = "exit-Btn">Exit</button>
             <!--<a class = "web1" href="https://uk030621.github.io/lwjukbasictax2425.io/" target="_blank">
                 <button class="taxCalc">Basic Tax Calculator</button>
@@ -69,6 +72,12 @@
     window.open('', '_self', '');
     window.close();
 });
+
+    function backspace() {
+        let display = document.getElementById('display');
+        display.value = display.value.slice(0, -1);
+    }
+
 </script>
    
 </body>

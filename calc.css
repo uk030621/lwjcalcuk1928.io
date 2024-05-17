@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Ensures the content is centered vertically in the viewport */
+    height: 100vh; /* Ensures the content is centered vertically in the viewport */
     background-color: hsl(0, 0%, 95%);
     background-image: url('vista.jpg');
     background-size: cover; /* This ensures the background image covers the entire viewport */
@@ -20,7 +20,9 @@ body{
     width: auto; /* Adjusted width for mobile screens */
     max-width: 100%; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
-    height: auto;   
+    height: auto;
+    margin-bottom: 70px;  
+    
 }
 
 a.link1{
@@ -162,7 +164,7 @@ button{
 }
 
 .tab-over{
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .exit-Btn{
@@ -170,7 +172,7 @@ button{
     background-color:  hsl(0, 0%, 15%, 0.7);
     color: white;
     border-radius: 40px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .exit-Btn:hover{
@@ -194,7 +196,7 @@ button:active{
 .operator-Btn{
     background-color: hsl(35, 100%, 55%);
     color: black;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 .operator-Btn:hover{

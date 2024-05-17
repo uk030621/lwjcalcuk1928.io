@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: fit-content;
+    height: 100vh; /* Ensures the content is centered vertically in the viewport */
     background-color: hsl(0, 0%, 95%);
     background-image: url('vista.jpg');
     background-size: cover; /* This ensures the background image covers the entire viewport */
@@ -20,14 +20,12 @@ body{
     width: auto; /* Adjusted width for mobile screens */
     max-width: 100%; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
-    height: auto;
-    
+    height: auto;   
 }
 
 a.link1{
     text-decoration: none;
-    padding: 0px;
-    
+    padding: 0px; 
 }
 
 a.link1:hover{
@@ -39,8 +37,7 @@ a.link1:hover{
     font-size: smaller;
     opacity: 0.6;
     color: white;
-    margin-left: 15px;
-    
+    margin-left: 15px; 
 }
 
 .me{
@@ -80,8 +77,7 @@ img.pic1{
     margin-top: 0px;
     width: 50px;
     height: auto;
-    border-radius: 20px;
-    
+    border-radius: 20px;   
 }
 
 .barcode{
@@ -114,7 +110,7 @@ p.nicepic:hover{
     border: none;
     background-color: hsl(0, 0%, 40%);
     color: white;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 #keys{
@@ -164,9 +160,10 @@ button{
 }
 
 .exit-Btn{
-    font-size: 12px;
-    background-color: hsl(35, 100%, 55%);
-    color: black;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 8px;
 }
 
 .exit-Btn:hover{

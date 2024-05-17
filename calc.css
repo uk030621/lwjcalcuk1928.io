@@ -3,7 +3,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensures the content is centered vertically in the viewport */
+    min-height: 100vh; /* Ensures the content is centered vertically in the viewport */
     background-color: hsl(0, 0%, 95%);
     background-image: url('vista.jpg');
     background-size: cover; /* This ensures the background image covers the entire viewport */
@@ -15,8 +15,8 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: hsl(0, 0%, 15%, 0.7);
     border-radius: 15px;
-    padding-top: 25px;
-    padding-bottom: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     width: auto; /* Adjusted width for mobile screens */
     max-width: 100%; /* Updated to 100% to fit mobile screens */
     overflow: hidden;
@@ -147,6 +147,7 @@ p.nicepic:hover{
     text-decoration-line: none;
 }
 
+
 button{
     width: 80px; /* Adjusted width for mobile screens */
     height: 80px; /* Adjusted height for mobile screens */
@@ -157,13 +158,19 @@ button{
     font-size: 2rem; /* Adjusted font size for mobile screens */
     font-weight: bold;
     cursor: pointer;
+    align-content: center;
+}
+
+.tab-over{
+    margin-left: 20px;
 }
 
 .exit-Btn{
-    font-size: 20px;
-    background-color: green;
+    font-size: 1rem;
+    background-color:  hsl(0, 0%, 15%, 0.7);
     color: white;
-    border-radius: 8px;
+    border-radius: 40px;
+    margin-left: 20px;
 }
 
 .exit-Btn:hover{
@@ -187,6 +194,7 @@ button:active{
 .operator-Btn{
     background-color: hsl(35, 100%, 55%);
     color: black;
+    margin-left: 20px;
 }
 
 .operator-Btn:hover{

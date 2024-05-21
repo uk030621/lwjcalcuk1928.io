@@ -163,15 +163,6 @@ button{
     align-content: center;
 }
 
-.fullscreen{
-    font-size: 0.7rem;
-    border-radius: 8px;
-    height: 40%;
-    width: 15%;
-    margin-left: 10px;
-    opacity: 0.7;
-}
-
 .tab-over{
     margin-left: 0px;
 }

@@ -1,0 +1,21 @@
+{
+    "name": "Your Webpage Name",
+    "short_name": "Webpage",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "icons": [
+      {
+        "src": "lwj.jpg",
+        "sizes": "50x50",
+        "type": "image/png"
+      },
+      {
+        "src": "PAYE_Tax_Calc2.png",
+        "sizes": "50x50",
+        "type": "image/png"
+      }
+    ]
+  }
+  

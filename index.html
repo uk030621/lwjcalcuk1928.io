@@ -12,6 +12,7 @@
 </head>
 <body>
    <div id="calculator">
+    <button class = "fullscreen" onclick="toggleFullScreen()">Go Fullscreen</button>   
     <div id="datetime"></div> <!-- New div for displaying date -->
     <button type="button" class="developBtn" data-bs-toggle="collapse" data-bs-target="#demo">Developer</button>
         <div id="demo" class="collapse">
@@ -77,6 +78,19 @@
         let display = document.getElementById('display');
         display.value = display.value.slice(0, -1);
     }
+
+    function toggleFullScreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen()
+          .catch(err => {
+            alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+          });
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
+          }
+        }
+      }
 
 </script>
    
